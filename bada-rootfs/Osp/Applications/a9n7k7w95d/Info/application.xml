@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>DailyBriefing</Entry>
+    <Name>
+	
+        <English>Daily briefing</English>
+
+		<eng-GB>Daily briefing</eng-GB>
+		<nld-NL>Daily briefing</nld-NL>
+		<fra-FR>Mon quotidien</fra-FR>
+		<deu-DE>Daily Briefing</deu-DE>
+		<ita-IT>Daily briefing</ita-IT>
+		<kor-KR>데일리 브리핑</kor-KR>
+		<pol-PL>Skrót Dnia</pol-PL>
+		<por-PT>Ref. Diárias</por-PT>
+		<spa-ES>Resumen del día</spa-ES>
+		<tur-TR>Günlük bilgilendirme</tur-TR>
+		<eus-ES>Eguneko laburpena</eus-ES>
+		<bul-BG>Ежедневно осведомяване</bul-BG>
+		<cat-ES>Resum diari</cat-ES>
+		<hrv-HR>Dnevne novosti</hrv-HR>
+		<ces-CZ>Denní přehled</ces-CZ>
+		<dan-DK>Daglig orientering</dan-DK>
+		<est-EE>Ilmateade</est-EE>
+		<fin-FI>Päivittäinen tiedotus</fin-FI>
+		<glg-ES>Información diaria</glg-ES>
+		<hun-HU>Napi tájékoztató</hun-HU>
+		<isl-IS>Yfirlit dagsins</isl-IS>
+		<gle-IE>Faisnéisiú laethúil</gle-IE>
+		<kaz-KZ>Күнделікті жиналыс</kaz-KZ>
+		<lav-LV>Ikdienas apskats</lav-LV>
+		<lit-LT>Dienos informacija</lit-LT>
+		<mkd-MK>Дневно инфо</mkd-MK>
+		<nor-NO>Daglig briefing</nor-NO>
+		<ron-RO>Informare zilnică</ron-RO>
+		<rus-RU>Daily briefing</rus-RU>
+		<srp-RS>Dnevni pregled</srp-RS>
+		<slv-SI>Dnevno poročanje</slv-SI>
+		<swe-SE>Daglig genomgång</swe-SE>
+		<ukr-UA>Щоденний виклад</ukr-UA>
+		<ara-AE>تلخيص يومي</ara-AE>
+		<zho-CN>每日简报</zho-CN>
+		<zho-HK>每日簡報</zho-HK>
+		<zho-TW>今日動態</zho-TW>
+		<zho-SG>每日简报</zho-SG>
+		<eng-PH>Daily briefing</eng-PH>
+		<eng-US>Daily briefing</eng-US>
+		<ell-GR>Καθημ.ενημ/ωση</ell-GR>
+		<heb-IL>תדריך יומי</heb-IL>
+		<ind-ID>Pengarahan harian</ind-ID>
+		<msa-MY>Taklimat harian</msa-MY>
+		<por-BR>Daily briefing</por-BR>
+		<slk-SK>Denný prehľad</slk-SK>
+		<spa-US>Resumen del día</spa-US>
+		<tha-TH>สรุป​ประจำ​วัน</tha-TH>
+		<urd-PK>ہر روز کی ہدایات</urd-PK>
+		<vie-VN>Tóm tắt hàng ngày</vie-VN>
+		<fra-CA>Daily briefing</fra-CA>
+		<fas-IR>گزارش روزانه</fas-IR>
+
+    </Name>
+    <Vendor/>
+    <Description/>
+    <Icons>
+        <MainMenu>DailyBriefing.png</MainMenu>
+        <Setting/>
+        <Ticker/>
+        <QuickPanel/>
+        <LaunchImage>splash_daily_briefing.jpg</LaunchImage>
+    </Icons>
+</Application>
+
+

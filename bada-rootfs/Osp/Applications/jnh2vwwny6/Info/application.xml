@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>MiniDiary</Entry>
+    <Name>
+        <English>Mini diary</English>
+		<eng-GB>Mini diary</eng-GB>
+		<eng-US>Mini diary</eng-US>
+		<eng-PH>Mini diary</eng-PH>
+		<ara-AE>المفكرة الصغيرة</ara-AE>
+		<hye-AM>Փոքրիկ օրագիր</hye-AM>
+		<aze-AZ>Mini gündəlik</aze-AZ>
+		<eus-ES>Mini egutegia</eus-ES>
+		<bul-BG>Мини дневник</bul-BG>
+		<cat-ES>Mini diari</cat-ES>
+		<zho-CN>迷你日记</zho-CN>
+		<zho-HK>迷你日記</zho-HK>
+		<zho-TW>日誌</zho-TW>
+		<zho-SG>迷你日记</zho-SG>
+		<hrv-HR>Mini dnevnik</hrv-HR>
+		<ces-CZ>Minideník</ces-CZ>
+		<dan-DK>Minii diary</dan-DK>
+		<nld-NL>Mini-dagboek</nld-NL>
+		<est-EE>Mini-päevik</est-EE>
+		<fas-IR>دفترخاطرات</fas-IR>
+		<fin-FI>Pienoispäiväkirja</fin-FI>
+		<fra-FR>Mini journal</fra-FR>
+		<fra-CA>Mini journal</fra-CA>
+		<glg-ES>Mini diario</glg-ES>
+		<kat-GE>მინი დღიური</kat-GE>
+		<deu-DE>Mini Diary</deu-DE>
+		<ell-GR>Μίνι ημερολόγιο</ell-GR>
+		<heb-IL>יומן קטן</heb-IL>
+		<hun-HU>Mininapló</hun-HU>
+		<isl-IS>Smádagbók</isl-IS>
+		<ind-ID>Diari mini</ind-ID>
+		<gle-IE>Mion-dialann</gle-IE>
+		<ita-IT>Mini diario</ita-IT>
+		<kaz-KZ>Шағын күнделік</kaz-KZ>
+		<kor-KR>미니 다이어리</kor-KR>
+		<lav-LV>Mazā dienasgrāmata</lav-LV>
+		<lit-LT>Mini dienoraštis</lit-LT>
+		<mkd-MK>Мини дневник</mkd-MK>
+		<msa-MY>Diari mini</msa-MY>
+		<mlt-MT>Mini djarju</mlt-MT>
+		<nor-NO>Minidagbok</nor-NO>
+		<pol-PL>Mini dziennik</pol-PL>
+		<por-PT>Mini-diário</por-PT>
+		<por-BR>Mini-diário</por-BR>
+		<ron-RO>Minijurnal</ron-RO>
+		<rus-RU>Mini diary</rus-RU>
+		<srp-RS>Mini dnevnik</srp-RS>
+		<slk-SK>Minidenník</slk-SK>
+		<slv-SI>Mini dnevnik</slv-SI>
+		<spa-ES>Mini diario</spa-ES>
+		<spa-US>Minidiario</spa-US>
+		<swe-SE>Minidagbok</swe-SE>
+		<tha-TH>มินิ​ไดอารี่</tha-TH>
+		<tur-TR>Mini günlük</tur-TR>
+		<ukr-UA>Міні щоденник</ukr-UA>
+		<urd-PK>منی ڈائیری</urd-PK>
+		<uzb-UZ>Mini diary</uzb-UZ>
+		<vie-VN>Mini diary</vie-VN>
+
+
+
+    </Name>
+    <Vendor/>
+    <Description/>
+    <Icons>
+        <MainMenu>MiniDiary.png</MainMenu>
+        <Setting/>
+        <Ticker/>
+        <QuickPanel/>
+        <LaunchImage>splash_minidiary.jpg</LaunchImage>
+    </Icons>
+</Application>

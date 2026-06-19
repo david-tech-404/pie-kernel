@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>Kona</Entry>
+    <Name>
+        <English>Samsung Apps</English>
+        <eng-GB>Samsung Apps</eng-GB>
+    </Name>
+    <Vendor>Samsung Electronics</Vendor>
+    <Description>Samsung Apps application browser.</Description>
+    <Icons>
+        <MainMenu>Kona.png</MainMenu>
+        <Setting>Kona.png</Setting>
+        <Ticker>Kona.png</Ticker>
+        <QuickPanel>Kona.png</QuickPanel>
+        <LaunchImage>splash.jpg</LaunchImage>
+    </Icons>
+    <AutoScaling>
+        <Enabled>false</Enabled>
+    </AutoScaling>
+</Application>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+    <Id>a9n7k7w95d</Id>
+    <Secret>A409268CA5B5ED82E89A8F3757A16271</Secret>
+	<AppVersion>1.0.0</AppVersion>
+     <Privileges>
+		<Privilege>
+			<Name>SYSTEM_SERVICE</Name>
+		</Privilege>
+		<Privilege>
+			<Name>HTTP</Name>
+		</Privilege>
+		<Privilege>
+			<Name>IMAGE</Name>
+		</Privilege>
+		<Privilege>
+			<Name>CALENDARBOOK</Name>
+		</Privilege>
+		<Privilege>
+			<Name>MULTI_CALENDARBOOK</Name>
+		</Privilege>
+		<Privilege>
+			<Name>WEB_SERVICE</Name>
+		</Privilege>
+		<Privilege>
+			<Name>MESSAGE_BOX</Name>
+		</Privilege>
+		<Privilege>
+			<Name>TELEPHONY</Name>
+		</Privilege>
+    </Privileges>
+    <DeviceProfile>
+        <CPU>ARM11</CPU>
+	      <MinimumHeapSize>200</MinimumHeapSize>
+        <Accelerator3D>OpenGL-ES 1.1</Accelerator3D>
+	      <Accelerator3D>OpenGL-ES 2.0</Accelerator3D>
+        <BluetoothProfile>OPP</BluetoothProfile>
+	      <WifiMode>Ad-hoc</WifiMode>
+	      <Sensor>GPS</Sensor>
+	      <Sensor>Accelerometer</Sensor>
+	      <InputDevice>Touch</InputDevice>
+	      <ScreenSize>480x800</ScreenSize>
+    </DeviceProfile>
+</Manifest>
+

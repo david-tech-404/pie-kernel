@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>BDAgent</Entry>
+    <Name>BDAgent</Name>
+    <Version>1.0.0</Version>
+    <Vendor/>
+    <Description/>
+    <Icons>
+        <MainMenu>BDAgent.png</MainMenu>
+        <Setting>BDAgent.png</Setting>
+        <Ticker>BDAgent.png</Ticker>
+        <QuickPanel>BDAgent.png</QuickPanel>
+        <Loading>BDAgent.png</Loading>
+        <LaunchImage/>
+    </Icons>
+</Application>

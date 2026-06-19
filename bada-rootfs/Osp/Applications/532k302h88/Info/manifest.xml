@@ -1,0 +1,38 @@
+<?xml version='1.0' ?>
+<Manifest>
+	<Id>532k302h88</Id>
+	<Secret>3D0FAD2FDF38191779F5482D02D14F83</Secret>
+	<AppVersion>1.0.4</AppVersion>
+	<Privileges>
+		<Privilege>
+			<Name>SYSTEM_SERVICE</Name>
+			<GroupId>devicegr44</GroupId>
+		</Privilege>
+		<Privilege>
+			<Name>SOCKET</Name>
+		</Privilege>
+		<Privilege>
+			<Name>NET</Name>
+		</Privilege>
+		<Privilege>
+			<Name>WIFI</Name>
+		</Privilege>
+		<Privilege>
+			<Name>INSTALLATION</Name>
+		</Privilege>
+		<Privilege>
+			<Name>HTTP</Name>
+		</Privilege>
+	</Privileges>
+	<DeviceProfile>
+		<Accelerator3D>OpenGL-ES1.1</Accelerator3D>
+		<BluetoothProfile>SPP</BluetoothProfile>
+		<CPU>Cortex8</CPU>
+		<InputDevice>Touch</InputDevice>
+		<MinimumHeapSize>16</MinimumHeapSize>
+		<MinimumVRAMSize>4</MinimumVRAMSize>
+		<ScreenSize>480x800</ScreenSize>
+		<Sensor>Accelerometer</Sensor>
+		<SoundMixing>Enable</SoundMixing>
+	</DeviceProfile>
+</Manifest>

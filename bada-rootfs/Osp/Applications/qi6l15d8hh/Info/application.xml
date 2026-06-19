@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>Twitter</Entry>
+    <Name><English>Twitter</English></Name>
+    <Version>1.0.0</Version>
+    <Vendor/>
+    <Description/>
+    <Icons>
+        <MainMenu>Twitter.png</MainMenu>
+        <Setting/>
+        <Ticker>ticker_icon_twitter.png</Ticker>
+        <QuickPanel>quick_panel_noti_twitter.png</QuickPanel>
+        <Loading/>
+		<LaunchImage>splash_twitter.jpg</LaunchImage>
+    </Icons>
+</Application>

@@ -55,3 +55,8 @@ obj-$(CONFIG_INPUT_WISTRON_BTNS)	+= wistron_btns.o
 obj-$(CONFIG_INPUT_WM831X_ON)		+= wm831x-on.o
 obj-$(CONFIG_INPUT_XEN_KBDDEV_FRONTEND)	+= xen-kbdfront.o
 obj-$(CONFIG_INPUT_YEALINK)		+= yealink.o
+
+obj-y += wave_s8500_accel.o
+obj-y += wave_s8500_mag.o
+obj-y += wave_s8500_proximity.o
+obj-y += wave_s8500_keys.o

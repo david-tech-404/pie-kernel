@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+    <Id>jnh2vwwny6</Id>
+    <Secret>D7DEB9EA8DAB55D2BD8AEED6092BB14F</Secret>
+    <AppVersion>1.0.0</AppVersion>
+    <Privileges>
+    	<Privilege>
+		<Name>CONTENT_TRANSFER</Name>
+	</Privilege>
+    	<Privilege>
+    		<Name>IMAGE</Name>
+    	</Privilege>
+	<Privilege>
+		<Name>LOCAL_CONTENT</Name>
+	</Privilege>
+    	<Privilege>
+		<Name>LOCATION_SERVICE</Name>
+	</Privilege>
+	<Privilege>
+		<Name>REMOTE_CONTENT</Name>
+	</Privilege>
+    	<Privilege>
+    		<Name>SYSTEM_SERVICE</Name>
+    	</Privilege>
+	<Privilege>
+		<Name>TELEPHONY</Name>
+	</Privilege>
+    </Privileges>
+    <DeviceProfile>
+        <CPU>ARM11</CPU>
+	<MinimumHeapSize>200</MinimumHeapSize>
+	<MinimumVRAMSize>4</MinimumVRAMSize>
+        <Accelerator3D>OpenGL-ES1.1</Accelerator3D>
+        <Accelerator3D>OpenGL-ES2.0</Accelerator3D>
+        <BluetoothProfile>OPP</BluetoothProfile>
+	<WifiMode>Ad-hoc</WifiMode>
+	<Sensor>GPS</Sensor>
+	<Sensor>Accelerometer</Sensor>
+	<Sensor>Magnetic</Sensor>
+	<InputDevice>Touch</InputDevice>
+	<ScreenSize>480x800</ScreenSize>
+	<APIVersion>1.0</APIVersion>
+    </DeviceProfile>
+</Manifest>

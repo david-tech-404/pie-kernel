@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>Asphalt5</Entry>
+    <Name>
+        <English>Asphalt5</English>
+    </Name>
+    <Vendor>Gameloft</Vendor>
+    <Description>By Bui Thanh Vinh</Description>
+    <Icons>
+        <MainMenu>Asphalt5.png</MainMenu>
+        <Setting/>
+        <Ticker/>
+        <QuickPanel/>
+        <LaunchImage>splash_minidiary.png</LaunchImage>
+    </Icons>
+</Application>

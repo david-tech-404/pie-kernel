@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+    <Id>sy1vtw8nmm</Id>
+    <Secret>79CF82A9A7BDFDBD7CD9BB416113EB78</Secret>
+    <AppVersion>1.0.0</AppVersion>
+    <Privileges>
+    	<Privilege>
+				<Name>HTTP</Name>
+			</Privilege>
+			<Privilege>
+				<Name>IMAGE</Name>
+			</Privilege>
+			<Privilege>
+				<Name>SYSTEM_SERVICE</Name>
+			</Privilege>   
+			<Privilege>
+				<Name>TELEPHONY</Name>
+			</Privilege>  
+			<Privilege>
+				<Name>NET</Name>
+			</Privilege>
+			<Privilege>
+				<Name>SNS_SSO</Name>
+			</Privilege>
+			<Privilege>
+				<Name>WEB_SERVICE</Name>
+			</Privilege>  
+			<Privilege>
+        			<Name>NOTIFICATION</Name>
+      			</Privilege> 
+			<Privilege>
+				<Name>NET_MANAGER</Name>
+			</Privilege>
+    </Privileges>
+    <DeviceProfile>
+        <CPU>ARM11</CPU>
+	      <MinimumHeapSize>200</MinimumHeapSize>
+        <Accelerator3D>OpenGL-ES 1.1</Accelerator3D>
+	      <Accelerator3D>OpenGL-ES 2.0</Accelerator3D>
+        <BluetoothProfile>OPP</BluetoothProfile>
+	      <WifiMode>Ad-hoc</WifiMode>
+	      <Sensor>GPS</Sensor>
+	      <Sensor>Accelerometer</Sensor>
+	      <InputDevice>Touch</InputDevice>
+	      <ScreenSize>480x800</ScreenSize>
+    </DeviceProfile>
+</Manifest>

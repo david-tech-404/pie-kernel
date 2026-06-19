@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>SevenIM</Entry>
+    <Name>
+        <ara-AE>IM</ara-AE>
+        <arm-AM>IM</arm-AM>
+        <aze-AZ>IM</aze-AZ>
+        <eus-ES>IM</eus-ES>
+        <bul-BG>Чат</bul-BG>
+        <cat-ES>MI</cat-ES>
+        <zho-CN>IM</zho-CN>
+        <zho-HK>IM</zho-HK>
+        <zho-TW>IM</zho-TW>
+        <zho-SG>IM</zho-SG>
+        <hrv-HR>IM</hrv-HR>
+        <ces-CZ>Chatv</ces-CZ>
+        <dan-DK>Chat</dan-DK>
+        <nld-NL>Expresberichten</nld-NL>
+        <eng-GB>IM</eng-GB>
+        <eng-PH>IM</eng-PH>
+        <eng-US>IM</eng-US>
+        <est-EE>IM</est-EE>
+        <fas-IR>IM</fas-IR>
+        <fin-FI>Pikaviesti</fin-FI>
+        <fra-FR>MI</fra-FR>
+        <fra-CA>MI</fra-CA>
+        <glg-ES>MI</glg-ES>
+        <geo-GE>IM</geo-GE>
+        <deu-DE>IM</deu-DE>
+        <ell-GR>IM</ell-GR>
+        <heb-IL>IM</heb-IL>
+        <hun-HU>IM</hun-HU>
+        <isl-IS>Spjall</isl-IS>
+        <gle-IE>IM</gle-IE>
+        <ita-IT>IM</ita-IT>
+        <kaz-KZ>Шұғыл хабар алмасу</kaz-KZ>
+        <kor-KR>메신저</kor-KR>
+        <lav-LV>IM</lav-LV>
+        <lit-LT>IM</lit-LT>
+        <mkd-MK>Инстант пораки</mkd-MK>
+        <msa-MY>IM</msa-MY>
+        <mlt-MT>IM</mlt-MT>
+        <nor-NO>Chat</nor-NO>
+        <pol-PL>Komunikator</pol-PL>
+        <por-PT>MI</por-PT>
+        <por-BR>IM</por-BR>
+        <ron-RO>Mesagerie instant</ron-RO>
+        <rus-RU>Чат</rus-RU>
+        <srp-RS>IM</srp-RS>
+        <slk-SK>Okamžité správy</slk-SK>
+        <slv-SI>NS</slv-SI>
+        <spa-ES>MI</spa-ES>
+        <spa-US>MI</spa-US>
+        <swe-SE>IM</swe-SE>
+        <tur-TR>IM</tur-TR>
+        <ukr-UA>IM</ukr-UA>
+        <urd-PK>IM</urd-PK>
+        <uzb-UZ>IM</uzb-UZ>
+        <ind-ID>IM</ind-ID>
+        <tha-TH>IM</tha-TH>
+        <vie-VN>IM</vie-VN>
+    </Name>
+    <Vendor>Samsung Electronics</Vendor>
+    <Description/>
+    <Icons>
+        <MainMenu>SevenIM.png</MainMenu>
+        <Setting>SevenIM_Setting.png</Setting>
+        <Ticker>SevenIM_notify.png</Ticker>
+        <QuickPanel>SevenIM_quick.png</QuickPanel>
+        <LaunchImage>SevenIM_splash.jpg</LaunchImage>
+    </Icons>
+</Application>

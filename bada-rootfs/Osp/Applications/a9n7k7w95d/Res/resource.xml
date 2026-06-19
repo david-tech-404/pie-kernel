@@ -1,0 +1,149 @@
+<Resource>
+
+	<!-- Common -->
+	<Common>
+		<Image>
+			<RES_COMMON_IMAGE_PREV>/Res/dailybriefing_spin_left_icon.png</RES_COMMON_IMAGE_PREV>
+			<RES_COMMON_IMAGE_PREV_PRESSED>/Res/dailybriefing_spin_left_icon_01.png</RES_COMMON_IMAGE_PREV_PRESSED>
+			<RES_COMMON_IMAGE_NEXT>/Res/dailybriefing_spin_right_icon.png</RES_COMMON_IMAGE_NEXT>
+			<RES_COMMON_IMAGE_NEXT_PRESSED>/Res/dailybriefing_spin_right_icon_01.png</RES_COMMON_IMAGE_NEXT_PRESSED>
+
+			<RES_COMMON_IMAGE_UPDATED_WHITE>/Res/dailybriefing_updated_icon.png</RES_COMMON_IMAGE_UPDATED_WHITE>
+			<RES_COMMON_IMAGE_UPDATED_GRAY>/Res/dailybriefing_updated_icon_gray.png</RES_COMMON_IMAGE_UPDATED_GRAY>
+			
+			<RES_COMMON_IMAGE_BOTTOM_BG>/Res/bg_panel.png</RES_COMMON_IMAGE_BOTTOM_BG>
+
+			<RES_COMMON_IMAGE_SETTING>/Res/setting_normal.png</RES_COMMON_IMAGE_SETTING>
+			<RES_COMMON_IMAGE_SETTING_PRESSED>/Res/setting_press.png</RES_COMMON_IMAGE_SETTING_PRESSED>
+			<RES_COMMON_IMAGE_BACK>/Res/back_normal.png</RES_COMMON_IMAGE_BACK>
+			<RES_COMMON_IMAGE_BACK_PRESSED>/Res/back_press.png</RES_COMMON_IMAGE_BACK_PRESSED>
+
+			<RES_COMMON_IMAGE_CURSOR_NONE>/Res/dailybriefing_page_bar_00.png</RES_COMMON_IMAGE_CURSOR_NONE>
+			<RES_COMMON_IMAGE_CURSOR_1>/Res/dailybriefing_page_bar_01.png</RES_COMMON_IMAGE_CURSOR_1>
+			<RES_COMMON_IMAGE_CURSOR_2>/Res/dailybriefing_page_bar_02.png</RES_COMMON_IMAGE_CURSOR_2>
+			<RES_COMMON_IMAGE_CURSOR_3>/Res/dailybriefing_page_bar_03.png</RES_COMMON_IMAGE_CURSOR_3>
+			<RES_COMMON_IMAGE_CURSOR_4>/Res/dailybriefing_page_bar_04.png</RES_COMMON_IMAGE_CURSOR_4>
+			<RES_COMMON_IMAGE_CURSOR_5>/Res/dailybriefing_page_bar_05.png</RES_COMMON_IMAGE_CURSOR_5>
+
+			<RES_COMMON_IMAGE_LOADING1>/Res/00_processing_processing_2_ani00_bg.png</RES_COMMON_IMAGE_LOADING1>
+			<RES_COMMON_IMAGE_LOADING2>/Res/00_processing_processing_2_ani01_bg.png</RES_COMMON_IMAGE_LOADING2>
+			<RES_COMMON_IMAGE_LOADING3>/Res/00_processing_processing_2_ani02_bg.png</RES_COMMON_IMAGE_LOADING3>
+			<RES_COMMON_IMAGE_LOADING4>/Res/00_processing_processing_2_ani03_bg.png</RES_COMMON_IMAGE_LOADING4>
+			<RES_COMMON_IMAGE_LOADING5>/Res/00_processing_processing_2_ani04_bg.png</RES_COMMON_IMAGE_LOADING5>
+			<RES_COMMON_IMAGE_LOADING6>/Res/00_processing_processing_2_ani05_bg.png</RES_COMMON_IMAGE_LOADING6>
+			<RES_COMMON_IMAGE_LOADING7>/Res/00_processing_processing_2_ani06_bg.png</RES_COMMON_IMAGE_LOADING7>
+			<RES_COMMON_IMAGE_LOADING8>/Res/00_processing_processing_2_ani07_bg.png</RES_COMMON_IMAGE_LOADING8>
+		</Image>
+	</Common>
+
+	<!-- Weather -->
+	<Weather>
+		<Image>
+			<RES_WEATHER_IMAGE_BACKGROUND>/Res/2depth/weather_bg.png</RES_WEATHER_IMAGE_BACKGROUND>
+
+			<RES_WEATHER_IMAGE_GOOD_BG>/Res/2depth/dailybriefing_weather_bg.png</RES_WEATHER_IMAGE_GOOD_BG>
+			<RES_WEATHER_IMAGE_BAD_BG>/Res/2depth/dailybriefing_weather_bg2.png</RES_WEATHER_IMAGE_BAD_BG>
+
+			<RES_WEATHER_IMAGE_MORE>/Res/2depth/dailybriefing_weather_btn.png</RES_WEATHER_IMAGE_MORE>
+			<RES_WEATHER_IMAGE_MORE_PRESSED>/Res/2depth/dailybriefing_weather_btn_press.png</RES_WEATHER_IMAGE_MORE_PRESSED>
+						
+			<RES_WEATHER_IMAGE_BTN01_NORMAL>/Res/2depth/Untitled-1.png</RES_WEATHER_IMAGE_BTN01_NORMAL>
+			<RES_WEATHER_IMAGE_BTN02_NORMAL>/Res/2depth/Untitled-2.png</RES_WEATHER_IMAGE_BTN02_NORMAL>
+			<RES_WEATHER_IMAGE_BTN03_NORMAL>/Res/2depth/Untitled-3.png</RES_WEATHER_IMAGE_BTN03_NORMAL>
+			<RES_WEATHER_IMAGE_BTN01_PRESS>/Res/2depth/dailybriefing_weather_btn_01_left_press.png</RES_WEATHER_IMAGE_BTN01_PRESS>
+			<RES_WEATHER_IMAGE_BTN02_PRESS>/Res/2depth/dailybriefing_weather_btn_01_center_press.png</RES_WEATHER_IMAGE_BTN02_PRESS>
+			<RES_WEATHER_IMAGE_BTN03_PRESS>/Res/2depth/dailybriefing_weather_btn_01_right_press.png</RES_WEATHER_IMAGE_BTN03_PRESS>
+			
+			<RES_WEATHER_IMAGE_HOURBYHOUR>/Res/2depth/Hour_by_Hour.png</RES_WEATHER_IMAGE_HOURBYHOUR>
+			<RES_WEATHER_IMAGE_RADARSAT>/Res/2depth/Radar_Sat.png</RES_WEATHER_IMAGE_RADARSAT>
+			<RES_WEATHER_IMAGE_FORECASTDETAILS>/Res/2depth/Forecast_Details.png</RES_WEATHER_IMAGE_FORECASTDETAILS>
+			<RES_WEATHER_IMAGE_HOURBYHOUR_WHITE>/Res/2depth/Hour_by_Hour(W).png</RES_WEATHER_IMAGE_HOURBYHOUR_WHITE>
+			<RES_WEATHER_IMAGE_RADARSAT_WHITE>/Res/2depth/Radar_Sat(W).png</RES_WEATHER_IMAGE_RADARSAT_WHITE>
+			<RES_WEATHER_IMAGE_FORECASTDETAILS_WHITE>/Res/2depth/Forecast_Details(W).png</RES_WEATHER_IMAGE_FORECASTDETAILS_WHITE>
+
+			<RES_WEATHER_IMAGE_REFRESH_NORMAL>/Res/weather_refresh_normal.png</RES_WEATHER_IMAGE_REFRESH_NORMAL>
+			<RES_WEATHER_IMAGE_REFRESH_PRESS>/Res/weather_refresh_press.png</RES_WEATHER_IMAGE_REFRESH_PRESS>
+		</Image>
+	</Weather>
+
+	<!-- Stock -->
+	<Stock>
+		<Image>
+			<RES_STOCK_IMAGE_BACKGROUND>/Res/stock_bg.png</RES_STOCK_IMAGE_BACKGROUND>
+
+			<RES_STOCK_IMAGE_PRICE_UP_ICON>/Res/dailybriefing_spin_up_icon.png</RES_STOCK_IMAGE_PRICE_UP_ICON>
+			<RES_STOCK_IMAGE_PRICE_DOWN_ICON>/Res/dailybriefing_spin_down_icon.png</RES_STOCK_IMAGE_PRICE_DOWN_ICON>
+			<RES_STOCK_IMAGE_PRICE_ZERO_ICON>/Res/dailybriefing_spin_zero_icon.png</RES_STOCK_IMAGE_PRICE_ZERO_ICON>
+
+			<RES_STOCK_IMAGE_PRICE_UP_BG>/Res/dailybriefing_stock_bg_up.png</RES_STOCK_IMAGE_PRICE_UP_BG>
+			<RES_STOCK_IMAGE_PRICE_DOWN_BG>/Res/dailybriefing_stock_bg_down.png</RES_STOCK_IMAGE_PRICE_DOWN_BG>
+			<RES_STOCK_IMAGE_PRICE_ZERO_BG>/Res/dailybriefing_stock_bg_zero.png</RES_STOCK_IMAGE_PRICE_ZERO_BG>
+
+			<RES_STOCK_IMAGE_TAB_LEFT>/Res/dailybriefing_stock_btn_01.png</RES_STOCK_IMAGE_TAB_LEFT>
+			<RES_STOCK_IMAGE_TAB_LEFT_PRESS>/Res/dailybriefing_stock_btn_01_press.png</RES_STOCK_IMAGE_TAB_LEFT_PRESS>
+			<RES_STOCK_IMAGE_TAB_MIDDLE>/Res/dailybriefing_stock_btn_02.png</RES_STOCK_IMAGE_TAB_MIDDLE>
+			<RES_STOCK_IMAGE_TAB_MIDDLE_PRESS>/Res/dailybriefing_stock_btn_02_press.png</RES_STOCK_IMAGE_TAB_MIDDLE_PRESS>
+			<RES_STOCK_IMAGE_TAB_RIGHT>/Res/dailybriefing_stock_btn_03.png</RES_STOCK_IMAGE_TAB_RIGHT>
+			<RES_STOCK_IMAGE_TAB_RIGHT_PRESS>/Res/dailybriefing_stock_btn_03_press.png</RES_STOCK_IMAGE_TAB_RIGHT_PRESS>
+
+			<RES_STOCK_IMAGE_INTERNET_ICON>/Res/internet_icon.png</RES_STOCK_IMAGE_INTERNET_ICON>
+			<RES_STOCK_IMAGE_INTERNET_ICON_PRESS>/Res/internet_icon_press.png</RES_STOCK_IMAGE_INTERNET_ICON_PRESS>
+
+			<RES_STOCK_IMAGE_DELAYED>/Res/delayed.png</RES_STOCK_IMAGE_DELAYED>
+			<RES_STOCK_IMAGE_DELAYED_PRESS>/Res/delayed_press.png</RES_STOCK_IMAGE_DELAYED_PRESS>
+
+			<RES_STOCK_IMAGE_GRAPH_GRADATION>/Res/gradation.png</RES_STOCK_IMAGE_GRAPH_GRADATION>
+
+			<RES_STOCK_IMAGE_REFRESH_NORMAL>/Res/stock_refresh_normal.png</RES_STOCK_IMAGE_REFRESH_NORMAL>
+			<RES_STOCK_IMAGE_REFRESH_PRESS>/Res/stock_refresh_press.png</RES_STOCK_IMAGE_REFRESH_PRESS>
+		</Image>	
+	</Stock>
+		
+	<!-- News -->
+	<News>
+		<Image>
+			<RES_NEWS_IMAGE_NEWSPAPER_BACKGND>/Res/News/dailybriefing_news_bg.png</RES_NEWS_IMAGE_NEWSPAPER_BACKGND>
+			<RES_NEWS_IMAGE_AP_PRESS_LOGO>/Res/News/dailybriefing_news_logo.png</RES_NEWS_IMAGE_AP_PRESS_LOGO>
+			<RES_NEWS_IMAGE_REFRESH_NORMAL>/Res/News/news_refresh_normal.png</RES_NEWS_IMAGE_REFRESH_NORMAL>
+			<RES_NEWS_IMAGE_REFRESH_PRESS>/Res/News/news_refresh_press.png</RES_NEWS_IMAGE_REFRESH_PRESS>
+		</Image>
+	</News>
+		
+	<!-- Scheduler -->
+	<Scheduler>
+		<Image>
+			<RES_SCHEDULER_IMAGE_BACKGROUND>/Res/scheduler_bg.png</RES_SCHEDULER_IMAGE_BACKGROUND>
+			<RES_SCHEDULER_IMAGE_REFRESH_NORMAL>/Res/scheduler_refresh_normal.png</RES_SCHEDULER_IMAGE_REFRESH_NORMAL>
+			<RES_SCHEDULER_IMAGE_REFRESH_PRESS>/Res/scheduler_refresh_press.png</RES_SCHEDULER_IMAGE_REFRESH_PRESS>
+			<RES_SCHEDULER_IMAGE_LIST_ITEM_BG>/Res/schedule_list_item_bg.png</RES_SCHEDULER_IMAGE_LIST_ITEM_BG>
+			<RES_SCHEDULER_IMAGE_ANNIVERSARY>/Res/dailybriefing_list_birthday_icon.png</RES_SCHEDULER_IMAGE_ANNIVERSARY>
+			<RES_SCHEDULER_IMAGE_RECURRENCE>/Res/dailybriefing_sub_repeat_icon.png</RES_SCHEDULER_IMAGE_RECURRENCE>
+			<RES_SCHEDULER_IMAGE_REMINDER>/Res/dailybriefing_sub_alarm_icon.png</RES_SCHEDULER_IMAGE_REMINDER>
+			<RES_SCHEDULER_IMAGE_FACEBOOK>/Res/dailybriefing_sub_facebook_icon.png</RES_SCHEDULER_IMAGE_FACEBOOK>
+			<RES_SCHEDULER_IMAGE_YAHOO>/Res/dailybriefing_sub_yahoo_icon.png</RES_SCHEDULER_IMAGE_YAHOO>
+			<RES_SCHEDULER_IMAGE_GMAIL>/Res/dailybriefing_sub_google_icon.png</RES_SCHEDULER_IMAGE_GMAIL>
+			<RES_SCHEDULER_IMAGE_EXCHANGE>/Res/dailybriefing_sub_exchange_icon.png</RES_SCHEDULER_IMAGE_EXCHANGE>
+			<RES_SCHEDULER_IMAGE_EXCHANGE_NOTSEVEN>/Res/dailybriefing_sub_exchange_icon2.png</RES_SCHEDULER_IMAGE_EXCHANGE_NOTSEVEN>
+		</Image>
+	</Scheduler>
+
+	<!-- Setting -->
+	<Setting>
+		<Image>
+			<RES_SETTING_IMAGE_LIST_ITEM_BG>/Res/listitem_bg.png</RES_SETTING_IMAGE_LIST_ITEM_BG>
+			<RES_SETTING_IMAGE_CELCIUS>/Res/celsius.png</RES_SETTING_IMAGE_CELCIUS>
+			<RES_SETTING_IMAGE_FAHRENHEIT>/Res/fahrenheit.png</RES_SETTING_IMAGE_FAHRENHEIT>
+			<RES_SETTING_IMAGE_SEARCH_NORMAL>/Res/setting_btn_search.png</RES_SETTING_IMAGE_SEARCH_NORMAL>
+			<RES_SETTING_IMAGE_SEARCH_PRESSED>/Res/setting_btn_search_press.png</RES_SETTING_IMAGE_SEARCH_PRESSED>
+			<RES_SETTING_IMAGE_REORDER_ITEM_BG>/Res/reordering_list.png</RES_SETTING_IMAGE_REORDER_ITEM_BG>
+			<RES_SETTING_IMAGE_REORDER_ITEM_SELECT_BG>/Res/reordering_list_select.png</RES_SETTING_IMAGE_REORDER_ITEM_SELECT_BG>
+			<RES_SETTING_IMAGE_REORDER_UP>/Res/arrow_up_default.png</RES_SETTING_IMAGE_REORDER_UP>
+			<RES_SETTING_IMAGE_REORDER_UP_FOCUS>/Res/arrow_up_focus.png</RES_SETTING_IMAGE_REORDER_UP_FOCUS>
+			<RES_SETTING_IMAGE_REORDER_UP_DIM>/Res/arrow_up_dim.png</RES_SETTING_IMAGE_REORDER_UP_DIM>
+			<RES_SETTING_IMAGE_REORDER_DOWN>/Res/arrow_down_default.png</RES_SETTING_IMAGE_REORDER_DOWN>
+			<RES_SETTING_IMAGE_REORDER_DOWN_FOCUS>/Res/arrow_down_focus.png</RES_SETTING_IMAGE_REORDER_DOWN_FOCUS>
+			<RES_SETTING_IMAGE_REORDER_DOWN_DIM>/Res/arrow_down_dim.png</RES_SETTING_IMAGE_REORDER_DOWN_DIM>
+		</Image>
+	</Setting>
+	
+</Resource>

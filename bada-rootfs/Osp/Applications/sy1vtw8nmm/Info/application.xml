@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>Facebook</Entry>
+    <Name>
+        <English>Facebook</English>
+        <eng-GB>Facebook</eng-GB>
+    </Name>
+    <Vendor/>
+    <Description/>
+    <Icons>
+        <MainMenu>Facebook.png</MainMenu>
+        <Setting>Setting_icon_facebook_52x52.png</Setting>
+        <Ticker>ticker_icon_facebook.png</Ticker>
+        <QuickPanel>quick_panel_noti_instant_facebook.png</QuickPanel>
+        <LaunchImage>splash_facebook.jpg</LaunchImage>
+    </Icons>
+</Application>

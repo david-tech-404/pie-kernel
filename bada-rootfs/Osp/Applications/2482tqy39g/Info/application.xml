@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Application>
+    <Entry>z7clientengine</Entry>
+    <Name>
+        <English>z7clientengine</English>
+    </Name>
+    <Vendor/>
+    <Description/>
+    <Icons>
+        <MainMenu>z7clientengine.png</MainMenu>
+        <Ticker/>
+        <QuickPanel/>
+        <LaunchImage/>
+    </Icons>
+</Application>
