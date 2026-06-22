@@ -25,30 +25,50 @@ struct wave_ts {
 };
 
 static irqreturn_t wave_ts_irq_handler(int irq, void *dev_id)
+
+#define WAVE_MAX_FINGERS    5
+
+static irqreturn_t wave_ts_irq_handler(int irq, void *dev_id)
 {
     struct wave_ts *ts = dev_id;
-    u8 buf[6];
-    int x, y, pressed;
+    u8 buf[32];
+    int i, num_fingers;
 
-    /* Read touch data from Synaptics controller */
+    /* Read touch data - multitouch packet */
     i2c_master_recv(ts->client, buf, sizeof(buf));
 
-    pressed = buf[0] & 0x01;
-    x = ((buf[1] & 0x0F) << 8) | buf[2];
-    y = ((buf[1] & 0xF0) << 4) | buf[3];
+    num_fingers = buf[2] & 0x07;
 
-    if (pressed) {
-        input_report_abs(ts->input, ABS_X, x);
-        input_report_abs(ts->input, ABS_Y, y);
-        input_report_key(ts->input, BTN_TOUCH, 1);
-    } else {
-        input_report_key(ts->input, BTN_TOUCH, 0);
+    for (i = 0; i < num_fingers && i < WAVE_MAX_FINGERS; i++) {
+        int base = 3 + (i * 5);
+        int x = ((buf[base] & 0x0F) << 8) | buf[base + 1];
+        int y = ((buf[base] & 0xF0) << 4) | buf[base + 2];
+        int pressure = buf[base + 4];
+        int id = (buf[base + 3] >> 4) & 0x0F;
+        int event = buf[base + 3] & 0x0F;
+
+        input_mt_slot(ts->input, id);
+
+        if (event == 0x00) {
+            /* Finger lifted */
+            input_mt_report_slot_state(ts->input,
+                                       MT_TOOL_FINGER, false);
+        } else {
+            /* Finger down or move */
+            input_mt_report_slot_state(ts->input,
+                                       MT_TOOL_FINGER, true);
+            input_report_abs(ts->input, ABS_MT_POSITION_X, x);
+            input_report_abs(ts->input, ABS_MT_POSITION_Y, y);
+            input_report_abs(ts->input, ABS_MT_PRESSURE, pressure);
+            input_report_abs(ts->input, ABS_MT_TOUCH_MAJOR, pressure);
+        }
     }
 
+    input_mt_report_pointer_emulation(ts->input, true);
     input_sync(ts->input);
+
     return IRQ_HANDLED;
 }
-
 static int wave_ts_probe(struct i2c_client *client,
                          const struct i2c_device_id *id)
 {
@@ -73,12 +93,22 @@ static int wave_ts_probe(struct i2c_client *client,
     input->name       = WAVE_TS_NAME;
     input->id.bustype = BUS_I2C;
 
-    set_bit(EV_ABS, input->evbit);
+set_bit(EV_ABS, input->evbit);
     set_bit(EV_KEY, input->evbit);
     set_bit(BTN_TOUCH, input->keybit);
 
+    /* Single touch */
     input_set_abs_params(input, ABS_X, 0, WAVE_SCREEN_WIDTH, 0, 0);
     input_set_abs_params(input, ABS_Y, 0, WAVE_SCREEN_HEIGHT, 0, 0);
+
+    /* Multitouch */
+    input_mt_init_slots(input, WAVE_MAX_FINGERS);
+    input_set_abs_params(input, ABS_MT_POSITION_X,
+                         0, WAVE_SCREEN_WIDTH, 0, 0);
+    input_set_abs_params(input, ABS_MT_POSITION_Y,
+                         0, WAVE_SCREEN_HEIGHT, 0, 0);
+    input_set_abs_params(input, ABS_MT_PRESSURE, 0, 255, 0, 0);
+    input_set_abs_params(input, ABS_MT_TOUCH_MAJOR, 0, 255, 0, 0);
 
     ret = request_irq(ts->irq, wave_ts_irq_handler,
                       IRQF_TRIGGER_FALLING, WAVE_TS_NAME, ts);

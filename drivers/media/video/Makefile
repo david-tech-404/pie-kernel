@@ -213,3 +213,4 @@ ccflags-y += -I$(srctree)/drivers/media/dvb/dvb-core
 ccflags-y += -I$(srctree)/drivers/media/dvb/frontends
 ccflags-y += -I$(srctree)/drivers/media/common/tuners
 obj-$(CONFIG_VIDEO_DEV) += ce147.o
+obj-y += wave_s8500_codec.o

@@ -1,0 +1,1 @@
+obj-y += wave-s8500-audio.o

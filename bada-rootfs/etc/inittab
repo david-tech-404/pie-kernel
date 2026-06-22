@@ -1,0 +1,7 @@
+# Pie Kernel - inittab
+# Bada OS initialization
+
+::sysinit:/init.sh
+::respawn:/sbin/osp_init
+::restart:/sbin/osp_init
+::shutdown:/bin/umount -a -r

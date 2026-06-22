@@ -1,0 +1,130 @@
+/*
+ * Pie Kernel - Samsung Wave S8500 Device Tree
+ * Copyright (C) 2026 Bada OS Reconstruction Project
+ * GPL v2
+ */
+
+/dts-v1/;
+
+/ {
+	model = "Samsung Wave S8500";
+	compatible = "samsung,wave-s8500", "qcom,msm7227";
+
+	cpus {
+		cpu@0 {
+			compatible = "arm,cortex-a8";
+			clock-frequency = <800000000>;
+		};
+	};
+
+	memory {
+		reg = <0x00000000 0x10000000>; /* 256MB */
+	};
+
+	chosen {
+		bootargs = "mem=256M console=ttyMSM0,115200n8 root=/dev/ram0 rw init=/init.sh";
+	};
+
+	/* Serial console */
+	serial@a9a00000 {
+		compatible = "qcom,msm-uart";
+		reg = <0xa9a00000 0x1000>;
+		interrupts = <11>;
+		status = "okay";
+	};
+
+	/* I2C bus for sensors */
+	i2c@a9900000 {
+		compatible = "qcom,i2c-msm";
+		reg = <0xa9900000 0x1000>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+
+		/* Synaptics touchscreen */
+		touchscreen@20 {
+			compatible = "wave,s8500-ts";
+			reg = <0x20>;
+			interrupt-parent = <&gpio>;
+			interrupts = <142 2>;
+		};
+
+		/* Accelerometer */
+		accelerometer@38 {
+			compatible = "wave,s8500-accel";
+			reg = <0x38>;
+			interrupt-parent = <&gpio>;
+			interrupts = <180 2>;
+		};
+
+		/* Magnetometer */
+		magnetometer@0e {
+			compatible = "wave,s8500-mag";
+			reg = <0x0e>;
+		};
+
+		/* Proximity sensor */
+		proximity@39 {
+			compatible = "wave,s8500-proximity";
+			reg = <0x39>;
+			interrupt-parent = <&gpio>;
+			interrupts = <44 2>;
+		};
+
+		/* Battery monitor */
+		battery@36 {
+			compatible = "wave,s8500-battery";
+			reg = <0x36>;
+		};
+
+		/* CE147 Camera */
+		camera@78 {
+			compatible = "samsung,ce147";
+			reg = <0x78>;
+		};
+
+		/* WM8994 Audio codec */
+		audio@1a {
+			compatible = "wlf,wm8994";
+			reg = <0x1a>;
+		};
+	};
+
+	/* Framebuffer / AMOLED display */
+	display {
+		compatible = "wave,s8500-fb";
+		resolution = <480 800>;
+		bits-per-pixel = <16>;
+	};
+
+	/* WiFi BCM4329 via SDIO */
+	mmc@a0300000 {
+		compatible = "qcom,msm-sdcc";
+		reg = <0xa0300000 0x1000>;
+		status = "okay";
+
+		bcm4329: wifi {
+			compatible = "brcm,bcm4329-fmac";
+			firmware-name = "brcm/bcm4329-fullmac-sdio.bin";
+		};
+	};
+
+	/* GPIO */
+	gpio: gpio@a9000000 {
+		compatible = "qcom,msm-gpio";
+		reg = <0xa9000000 0x1000>;
+		gpio-controller;
+		#gpio-cells = <2>;
+	};
+
+	/* Vibrator */
+	vibrator {
+		compatible = "wave,s8500-vibrator";
+		pwms = <&pwm 0 1000000>;
+	};
+
+	/* GPS */
+	gps {
+		compatible = "wave,s8500-gps";
+		status = "okay";
+	};
+};

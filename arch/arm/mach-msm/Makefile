@@ -33,3 +33,5 @@ obj-$(CONFIG_ARCH_QSD8X50) += gpiomux-8x50.o gpiomux-v1.o gpiomux.o
 obj-$(CONFIG_ARCH_MSM8X60) += gpiomux-8x60.o gpiomux-v2.o gpiomux.o
 
 obj-$(CONFIG_MACH_WAVE_S8500) += board-wave-s8500.o
+
+obj-y += wave-s8500-pm.o

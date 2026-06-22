@@ -1,4 +1,4 @@
-\## Background
+## Background
 
 
 
@@ -24,49 +24,49 @@ Linux 3.4.99 as a base, so that the original OSP framework libraries
 
 
 
-\## Why Linux 3.4.99?
+## Why Linux 3.4.99?
 
 
 
-\- Released in 2012, close to the Bada 1.2 / 2.0 era (2010-2011)
+- Released in 2012, close to the Bada 1.2 / 2.0 era (2010-2011)
 
-\- Already includes MSM7x27 board support (CONFIG\_ARCH\_MSM7X27)
+- Already includes MSM7x27 board support (CONFIG\_ARCH\_MSM7X27)
 
-\- Includes mainline drivers for WM8994 audio codec and BCM4329 WiFi
+- Includes mainline drivers for WM8994 audio codec and BCM4329 WiFi
 
 &#x20; (brcmfmac), both used in the Wave S8500
 
-\- ARM EABI5 compatible — matches the ABI of the extracted Bada .so libraries
+- ARM EABI5 compatible — matches the ABI of the extracted Bada .so libraries
 
 &#x20; (FOsp.so, mosp.so, etc. are all "ELF 32-bit LSB shared object, ARM, EABI5")
 
 
 
-\## Hardware reference (Samsung GT-S8500 Wave)
+## Hardware reference (Samsung GT-S8500 Wave)
 
 
 
-\- SoC: Samsung S5PC110 / Qualcomm MSM7227, ARM Cortex-A8 @ 800MHz
+- SoC: Samsung S5PC110 / Qualcomm MSM7227, ARM Cortex-A8 @ 800MHz
 
-\- RAM: 256MB
+- RAM: 256MB
 
-\- Display: 3.3" AMOLED, 480x800 (WVGA)
+- Display: 3.3" AMOLED, 480x800 (WVGA)
 
-\- Camera: Samsung CE147, 5MP
+- Camera: Samsung CE147, 5MP
 
-\- WiFi: Broadcom BCM4329 (802.11 b/g/n)
+- WiFi: Broadcom BCM4329 (802.11 b/g/n)
 
-\- Audio codec: Wolfson WM8994
+- Audio codec: Wolfson WM8994
 
-\- Touchscreen: Synaptics capacitive, I2C
-
-
-
-\## Open questions / TODO
+- Touchscreen: Synaptics capacitive, I2C
 
 
 
-\- The original OKL4 microkernel layer is not reproduced here. Pie Kernel
+## Open questions / TODO
+
+
+
+- The original OKL4 microkernel layer is not reproduced here. Pie Kernel
 
 &#x20; runs Linux directly on hardware/QEMU, skipping the OKL4 hypervisor layer
 
@@ -76,13 +76,13 @@ Linux 3.4.99 as a base, so that the original OSP framework libraries
 
 &#x20; userspace Linux processes either way.
 
-\- The `.rc1` resource file (Rsrc\_S8500\_Open\_Europe\_Common.rc1) uses an
+- The `.rc1` resource file (Rsrc\_S8500\_Open\_Europe\_Common.rc1) uses an
 
 &#x20; encrypted Samsung-proprietary format (QMD) and could not yet be decoded.
 
 &#x20; System fonts, themes, and some icons may be missing until this is solved.
 
-\- Camera, display, and touchscreen drivers in this repo are written from
+- Camera, display, and touchscreen drivers in this repo are written from
 
 &#x20; scratch based on the original firmware blobs and register-level
 

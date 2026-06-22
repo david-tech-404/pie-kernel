@@ -1,7 +1,7 @@
 /*
  * Pie Kernel - Samsung Wave S8500 board support
  * Based on board-msm7x27.c
- * Copyright (C) 2024 Bada OS Reconstruction Project
+ * Copyright (C) 2026 Bada OS Reconstruction Project
  *
  * Hardware:
  * - CPU: Qualcomm MSM7227 ARM Cortex-A8 800MHz
@@ -40,9 +40,65 @@ static struct platform_device wm8994_audio_device = {
     .id   = -1,
 };
 
+/* RIL - Radio Interface Layer */
+static struct platform_device wave_ril_device = {
+    .name = "wave_s8500_ril",
+    .id   = -1,
+};
+
+/* Vibrator */
+static struct platform_device wave_vib_device = {
+    .name = "wave_s8500_vibrator",
+    .id   = -1,
+};
+
+/* GPS */
+static struct platform_device wave_gps_device = {
+    .name = "wave_s8500_gps",
+    .id   = -1,
+};
+
+/* Physical keys */
+static struct platform_device wave_keys_device = {
+    .name = "wave_s8500_keys",
+    .id   = -1,
+};
+
+/* SMD - Shared Memory Driver (modem communication) */
+static struct platform_device wave_smd_device = {
+    .name = "msm_smd",
+    .id   = -1,
+};
+
+/* Power Management */
+static struct platform_device wave_pm_device = {
+    .name = "wave_s8500_pm",
+    .id   = -1,
+};
+
+/* Wakelock */
+static struct platform_device wave_wakelock_device = {
+    .name = "wave_s8500_wakelock",
+    .id   = -1,
+};
+
+/* Video Codec (H264/MPEG4) */
+static struct platform_device wave_codec_device = {
+    .name = "wave_s8500_codec",
+    .id   = -1,
+};
+
 static struct platform_device *wave_s8500_devices[] __initdata = {
     &bcm4329_wifi_device,
     &wm8994_audio_device,
+    &wave_ril_device,
+    &wave_vib_device,
+    &wave_gps_device,
+    &wave_keys_device,
+    &wave_smd_device,
+    &wave_pm_device,
+    &wave_wakelock_device,
+    &wave_codec_device,
 };
 
 static void __init wave_s8500_init(void)
@@ -57,7 +113,7 @@ static void __init wave_s8500_map_io(void)
 }
 
 MACHINE_START(WAVE_S8500, "Samsung Wave S8500")
-    .atag_offset = 0x100,
-    .map_io      = wave_s8500_map_io,
+    .atag_offset  = 0x100,
+    .map_io       = wave_s8500_map_io,
     .init_machine = wave_s8500_init,
 MACHINE_END

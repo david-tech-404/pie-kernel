@@ -105,6 +105,165 @@ static int ce147_s_stream(struct v4l2_subdev *sd, int enable)
         return ce147_write(state->client, CE147_REG_MODE, 0x00);
 }
 
+static int ce147_enum_fmt(struct v4l2_subdev *sd,
+                          struct v4l2_fmtdesc *f)
+{
+    static const struct v4l2_fmtdesc formats[] = {
+        {
+            .index       = 0,
+            .type        = V4L2_BUF_TYPE_VIDEO_CAPTURE,
+            .description = "JPEG",
+            .pixelformat = V4L2_PIX_FMT_JPEG,
+        },
+        {
+            .index       = 1,
+            .type        = V4L2_BUF_TYPE_VIDEO_CAPTURE,
+            .description = "YUV 4:2:2",
+            .pixelformat = V4L2_PIX_FMT_YUYV,
+        },
+    };
+
+    if (f->index >= ARRAY_SIZE(formats))
+        return -EINVAL;
+
+    *f = formats[f->index];
+    return 0;
+}
+
+static int ce147_s_fmt(struct v4l2_subdev *sd,
+                       struct v4l2_mbus_framefmt *fmt)
+{
+    struct ce147_state *state =
+        container_of(sd, struct ce147_state, sd);
+
+    state->width  = fmt->width;
+    state->height = fmt->height;
+
+    /* Set resolution on hardware */
+    ce147_write(state->client, CE147_REG_WIDTH,  fmt->width >> 8);
+    ce147_write(state->client, CE147_REG_HEIGHT, fmt->height >> 8);
+
+    return 0;
+}
+
+static const struct v4l2_subdev_video_ops 
+/* CE147 additional registers */
+#define CE147_REG_FLASH     0x20
+#define CE147_REG_ZOOM      0x21
+#define CE147_REG_FOCUS     0x22
+#define CE147_REG_FOCUS_STATUS 0x23
+#define CE147_REG_WB        0x24
+#define CE147_REG_EXPOSURE  0x25
+
+/* Flash modes */
+#define CE147_FLASH_OFF     0x00
+#define CE147_FLASH_ON      0x01
+#define CE147_FLASH_AUTO    0x02
+#define CE147_FLASH_TORCH   0x03
+
+/* Focus modes */
+#define CE147_FOCUS_AUTO    0x00
+#define CE147_FOCUS_MACRO   0x01
+#define CE147_FOCUS_FIXED   0x02
+
+static int ce147_s_ctrl(struct v4l2_subdev *sd,
+                        struct v4l2_control *ctrl)
+{
+    struct ce147_state *state =
+        container_of(sd, struct ce147_state, sd);
+
+    switch (ctrl->id) {
+    case V4L2_CID_FLASH_LED_MODE:
+        switch (ctrl->value) {
+        case V4L2_FLASH_LED_MODE_NONE:
+            ce147_write(state->client, CE147_REG_FLASH,
+                       CE147_FLASH_OFF);
+            break;
+        case V4L2_FLASH_LED_MODE_FLASH:
+            ce147_write(state->client, CE147_REG_FLASH,
+                       CE147_FLASH_ON);
+            break;
+        case V4L2_FLASH_LED_MODE_TORCH:
+            ce147_write(state->client, CE147_REG_FLASH,
+                       CE147_FLASH_TORCH);
+            break;
+        }
+        break;
+
+    case V4L2_CID_ZOOM_ABSOLUTE:
+        /* Zoom range 0-30 */
+        if (ctrl->value < 0 || ctrl->value > 30)
+            return -EINVAL;
+        ce147_write(state->client, CE147_REG_ZOOM, ctrl->value);
+        break;
+
+    case V4L2_CID_FOCUS_AUTO:
+        if (ctrl->value)
+            ce147_write(state->client, CE147_REG_FOCUS,
+                       CE147_FOCUS_AUTO);
+        else
+            ce147_write(state->client, CE147_REG_FOCUS,
+                       CE147_FOCUS_FIXED);
+        break;
+
+    case V4L2_CID_AUTO_FOCUS_START:
+        /* Trigger autofocus */
+        ce147_write(state->client, CE147_REG_FOCUS,
+                   CE147_FOCUS_AUTO);
+        msleep(100);
+        break;
+
+    case V4L2_CID_AUTO_WHITE_BALANCE:
+        ce147_write(state->client, CE147_REG_WB, ctrl->value);
+        break;
+
+    case V4L2_CID_EXPOSURE:
+        ce147_write(state->client, CE147_REG_EXPOSURE,
+                   ctrl->value & 0xFF);
+        break;
+
+    default:
+        return -EINVAL;
+    }
+    return 0;
+}
+
+static int ce147_g_ctrl(struct v4l2_subdev *sd,
+                        struct v4l2_control *ctrl)
+{
+    struct ce147_state *state =
+        container_of(sd, struct ce147_state, sd);
+
+    switch (ctrl->id) {
+    case V4L2_CID_AUTO_FOCUS_STATUS:
+        ctrl->value = ce147_read(state->client,
+                                 CE147_REG_FOCUS_STATUS);
+        break;
+    case V4L2_CID_ZOOM_ABSOLUTE:
+        ctrl->value = ce147_read(state->client, CE147_REG_ZOOM);
+        break;
+    default:
+        return -EINVAL;
+    }
+    return 0;
+}
+
+static const struct v4l2_subdev_core_ops ce147_core_ops = {
+    .s_ctrl = ce147_s_ctrl,
+    .g_ctrl = ce147_g_ctrl,
+};
+
+static const struct v4l2_subdev_video_ops ce147_video_ops = {
+    .s_stream      = ce147_s_stream,
+    .enum_mbus_fmt = ce147_enum_fmt,
+    .s_mbus_fmt    = ce147_s_fmt,
+};
+
+static const struct v4l2_subdev_ops ce147_ops = {
+    .core  = &ce147_core_ops,
+    .video = &ce147_video_ops,
+};
+
 static const struct v4l2_subdev_video_ops ce147_video_ops = {
     .s_stream = ce147_s_stream,
 };

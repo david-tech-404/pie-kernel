@@ -52,3 +52,7 @@ obj-$(CONFIG_MAX8997_MUIC)	+= max8997-muic.o
 
 obj-y += wave_s8500_gps.o
 obj-y += wave_s8500_vibrator.o
+
+obj-y += wave_s8500_ril.o
+
+obj-y += wave_s8500_wakelock.o
